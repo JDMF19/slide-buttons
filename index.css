@@ -1,0 +1,84 @@
+
+:root{
+    --position-x: 16px;
+    --track-shadow-width: 80px;
+    --border-button-color: rgb(255,85,0);
+    --border-button-width: 50px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #212327;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    margin: 0px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 48px;
+    width: 400px;
+}
+
+.nav li{
+    height: 45px;
+    list-style: none;
+    display: flex;
+}
+
+.nav li .button{
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #212327;
+    z-index: 2;
+}
+
+.track{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 12px 0px 0px;
+    height: 60px;
+}
+
+.track-shadow{
+    height: 45px;
+    width: var(--track-shadow-width);
+    left: var(--position-x);
+    border-radius: 8px;
+    background-color: rgb(243,247,248);
+    transition: 300ms ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-button{
+    transition: 500ms ease-in-out;
+    position: absolute;
+    border-bottom: 2px solid var(--border-button-color);
+    width: var(--border-button-width);
+    border-radius: 15%;
+    top: 36px;
+}
